@@ -1,0 +1,4394 @@
+
+header {
+  background-color: #171717;
+  padding: 20px 6%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header h2 {
+  color: #d4af37;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+header a:hover {
+  color: #d4af37;
+}
+
+header button {
+  background-color: #d4af37;
+  color: #171717;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Aura Perfumes Hero Section */
+
+.hero-section {
+  min-height: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+  padding: 70px 6%;
+  background: linear-gradient(135deg, #171717, #403025);
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 650px;
+  text-align: left;
+}
+
+.hero-label {
+  color: #d4af37;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 4.5vw, 72px);
+  font-weight: 400;
+  line-height: 1.12;
+  margin-bottom: 25px;
+}
+
+.hero-section h1 span {
+  display: block;
+  color: #d4af37;
+}
+
+.hero-description {
+  color: #e0d8d0;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.hero-button {
+  display: inline-block;
+  background: #d4af37;
+  color: #171717;
+  padding: 15px 32px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #f0ce64;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Mobile Hero */
+@media (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 60px 6%;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    max-width: 400px;
+  }
+}
+/* Featured Products — Luxury Dark Theme */
+
+.featured-products {
+  padding: 80px 6%;
+  background: linear-gradient(135deg, #17110e, #352318, #1a120e);
+  text-align: center;
+}
+
+.featured-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-products h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #f5e9d8;
+  margin-bottom: 20px;
+}
+
+.featured-products p {
+  font-size: 16px;
+  color: #d1c2b3;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-products {
+    padding: 60px 5%;
+  }
+
+  .featured-products h2 {
+    font-size: 30px;
+  }
+}
+  
+/* Luxury Product Cards */
+
+.product-card {
+  background: linear-gradient(160deg, #302016, #18110e);
+  border: 1px solid #a47c36;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(212, 175, 55, 0.18);
+}
+
+.product-card h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: #fff5e8;
+  margin: 18px 0 12px;
+}
+
+.product-card p {
+  font-size: 15px;
+  color: #d1c2b3;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.product-card p:nth-of-type(2) {
+  color: #e5ba57;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .product-image {
+    height: 320px;
+  }
+}
+.shop-header {
+  background: linear-gradient(135deg, #171717, #403025);
+  padding: 85px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.shop-header h1 {
+  color: #d4af37;
+  font-size: clamp(36px, 5vw, 54px);
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+}
+
+.shop-header p {
+  color: #e0d8d0;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.shop-page .featured-products {
+  background-color: #faf8f5;
+}
+
+@media (max-width: 768px) {
+  .shop-header {
+    padding: 60px 20px;
+  }
+
+  .shop-header p {
+    font-size: 16px;
+  }
+}
+.shop-search {
+  max-width: 520px;
+  margin: 30px auto 45px;
+}
+
+.shop-search input {
+  width: 100%;
+  padding: 16px 22px;
+  border: 1px solid #ded6c8;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #171717;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.shop-search input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.shop-search input::placeholder {
+  color: #999999;
+}
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 45px;
+}
+
+.shop-category label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #403025;
+}
+
+.shop-category select {
+  width: 100%;
+  max-width: 300px;
+  padding: 14px 18px;
+  border: 1px solid #ded6c8;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #171717;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.shop-category select:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+.details-product-image {
+  width: 100%;
+  max-width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 25px auto;
+}
+
+@media (max-width: 768px) {
+  .details-product-image {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* ==========================================
+   AURA PERFUMES — PRODUCT DETAILS PAGE
+   Luxury Dark Chocolate & Gold Theme
+========================================== */
+
+.product-details-page {
+  min-height: 100vh;
+  padding: 50px 6% 90px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 0% 20%,
+      rgba(181, 105, 45, 0.38),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 100% 80%,
+      rgba(166, 93, 38, 0.30),
+      transparent 45%
+    ),
+    linear-gradient(
+      115deg,
+      #29170e 0%,
+      #130b08 45%,
+      #100906 70%,
+      #342014 100%
+    );
+
+  color: #fff4e5;
+}
+
+/* Decorative Golden Curves */
+
+.product-details-page::before {
+  content: "";
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  top: -530px;
+  left: -590px;
+  border: 3px solid rgba(226, 174, 79, 0.65);
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgba(212, 175, 55, 0.15);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.product-details-page::after {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  right: -760px;
+  bottom: -400px;
+  border: 3px solid rgba(226, 174, 79, 0.55);
+  border-radius: 50%;
+  box-shadow: 0 0 70px rgba(212, 175, 55, 0.12);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Main Container */
+
+.product-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Back to Shop */
+
+.product-details-container > a {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: #eac36c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.product-details-container > a:hover {
+  color: #fff0c0;
+}
+
+/* Product Layout */
+
+.product-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  align-items: start;
+}
+
+/* Product Image */
+
+.product-details-content .details-product-image {
+  grid-column: 1;
+  grid-row: 1 / span 8;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(226, 174, 79, 0.35);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.product-details-image {
+  width: 100%;
+}
+
+.product-details-image .details-product-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Product Information */
+
+.product-details-info {
+  width: 100%;
+}
+
+.product-details-content h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #fff4e5;
+  margin: 0 0 15px;
+}
+
+.product-details-content h2 {
+  color: #eac36c;
+  margin-top: 25px;
+}
+
+.product-details-content p {
+  color: #d1c2b3;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   PERFUME SIZE SELECTION CARDS
+========================================== */
+
+.product-size-item {
+  display: inline-block;
+  width: 170px;
+  min-height: 110px;
+  margin: 0 10px 12px 0;
+  padding: 15px 8px;
+
+  background: linear-gradient(160deg, #302016, #18110e);
+  border: 1px solid rgba(226, 174, 79, 0.35);
+  border-radius: 8px;
+
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: 0.2s ease;
+}
+
+.product-size-item h3 {
+  font-size: 18px;
+  color: #fff4e5;
+  margin: 0 0 10px;
+}
+
+.product-size-item p {
+  font-size: 12px;
+  color: #d1c2b3;
+  margin: 7px 0;
+  white-space: nowrap;
+}
+
+.product-size-item:hover {
+  border-color: #eac36c;
+  background: #3a281b;
+}
+
+/* Selected Size */
+
+.product-size-item[aria-pressed="true"] {
+  background: #49331e;
+  border: 2px solid #eac36c;
+}
+
+/* Out of Stock */
+
+.product-size-item:disabled {
+  background: #211a16;
+  border-color: #594c40;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ==========================================
+   SELECTED SIZE, PRICE & STOCK
+========================================== */
+
+.size-heading {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 28px 0 14px;
+  color: #fff4e5;
+}
+
+.selected-variant {
+  margin-top: 22px;
+}
+
+.selected-variant h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #d1c2b3;
+  margin: 0 0 12px;
+}
+
+.selected-variant p {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: #d1c2b3;
+}
+
+.selected-variant p:first-of-type {
+  font-size: 25px;
+  font-weight: 700;
+  color: #eac36c;
+  margin: 15px 0;
+}
+
+/* ==========================================
+   QUANTITY SELECTOR
+========================================== */
+
+.quantity-selector {
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  margin: 12px 12px 0 0;
+  vertical-align: middle;
+
+  background: #21150f;
+  border: 1px solid rgba(226, 174, 79, 0.45);
+  border-radius: 5px;
+}
+
+.quantity-selector button {
+  width: 38px;
+  height: 48px;
+  border: none;
+  background: transparent;
+  color: #fff4e5;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-selector button:hover:not(:disabled) {
+  background: #49331e;
+}
+
+.quantity-selector button:disabled {
+  color: #817369;
+  cursor: not-allowed;
+}
+
+.quantity-selector span {
+  min-width: 35px;
+  text-align: center;
+  color: #fff4e5;
+  font-size: 16px;
+}
+
+/* ==========================================
+   GOLD ADD TO CART BUTTON
+========================================== */
+
+.add-to-cart-button {
+  background: linear-gradient(135deg, #f0cd7b, #d4a448);
+  color: #100904;
+  border: 1px solid #eac36c;
+  border-radius: 5px;
+
+  padding: 15px 35px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.add-to-cart-button:hover:not(:disabled) {
+  background: #f5d58d;
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
+}
+
+.add-to-cart-button:disabled {
+  background: #736b61;
+  border-color: #736b61;
+  color: #ddd4c9;
+  cursor: not-allowed;
+}
+
+.selected-variant .add-to-cart-button {
+  display: inline-block;
+  min-height: 50px;
+  margin-top: 12px;
+  vertical-align: middle;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .product-details-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .product-details-content .details-product-image {
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 100%;
+  }
+
+  .product-details-content h1 {
+    font-size: 32px;
+  }
+
+  .product-details-page {
+    padding: 35px 5% 65px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-size-item {
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* SHOPPING CART DRAWER */
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  border: none;
+  cursor: pointer;
+}
+
+.cart-drawer {
+  position: relative;
+  z-index: 1;
+  width: 440px;
+  max-width: 100%;
+  height: 100%;
+  background: #faf8f5;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.cart-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #ded6c8;
+}
+
+.cart-drawer-header h2 {
+  font-size: 27px;
+  color: #171717;
+  margin: 0;
+}
+
+.cart-drawer-header button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-drawer-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 25px;
+}
+
+.cart-drawer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ded6c8;
+}
+
+.cart-drawer-item h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #171717;
+}
+
+.cart-drawer-item p {
+  color: #666666;
+  font-size: 14px;
+}
+
+.cart-drawer-item strong {
+  white-space: nowrap;
+  color: #171717;
+}
+
+.cart-drawer-footer {
+  padding: 25px;
+  border-top: 1px solid #ded6c8;
+  background: #faf8f5;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 16px;
+  background: #171717;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.checkout-button:hover:not(:disabled) {
+  background: #b68d35;
+}
+
+.checkout-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .cart-drawer {
+    width: 100%;
+  }
+}
+/* Cart Product Image */
+.cart-product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+.cart-product-image {
+  width: 85px;
+  height: 100px;
+  object-fit: contain;
+  background: #f3eee7;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.cart-product-info h3 {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.cart-product-info p {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+/* Cart Quantity Controls */
+.cart-quantity-controls {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 12px;
+  border: 1px solid #d8cbb8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cart-quantity-controls button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #f7f2eb;
+  color: #222;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cart-quantity-controls button:hover:not(:disabled) {
+  background: #e8dccb;
+}
+
+.cart-quantity-controls button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.cart-quantity-controls span {
+  min-width: 32px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Remove Product */
+.cart-remove-button {
+  margin-top: 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #9a3434;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart-remove-button:hover {
+  color: #651c1c;
+}
+/* Featured Collection Background Fix */
+
+.featured-products {
+  background:
+    radial-gradient(
+      ellipse at 8% 12%,
+      rgba(151, 91, 39, 0.38),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 95% 45%,
+      rgba(125, 73, 31, 0.30),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #24150d 0%,
+      #100b08 48%,
+      #352014 100%
+    ) !important;
+
+  color: #f5e9d8;
+}
+/* Remove gap between Hero and Featured Products */
+
+.hero-section {
+  margin-bottom: 0;
+}
+
+.featured-products {
+  margin-top: 0;
+}
+
+main {
+  background-color: #17110e;
+}
+
+main > .hero-section + .featured-products {
+  border-top: none;
+}
+/* ========================================
+   FEATURED PRODUCTS — GOLDEN DECORATIVE DESIGN
+======================================== */
+
+.featured-products {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      ellipse at 0% 20%,
+      rgba(181, 105, 45, 0.43),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 100% 65%,
+      rgba(166, 93, 38, 0.34),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(116, 66, 29, 0.22),
+      transparent 48%
+    ),
+    linear-gradient(
+      115deg,
+      #29170e 0%,
+      #130b08 40%,
+      #100906 65%,
+      #342014 100%
+    ) !important;
+}
+
+/* FEATURED PRODUCTS — LEFT GOLDEN ARC */
+
+.featured-products::before {
+  content: "";
+  position: absolute;
+
+  width: 780px;
+  height: 780px;
+
+  top: -510px;
+  left: -590px;
+  right: auto;
+  bottom: auto;
+
+  border: 3px solid rgba(226, 174, 79, 0.72);
+  border-radius: 50%;
+  transform: none;
+
+  box-shadow:
+    0 0 20px rgba(235, 173, 66, 0.22),
+    0 0 90px rgba(185, 112, 43, 0.15);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* FEATURED PRODUCTS — RIGHT GOLDEN ARC */
+
+.featured-products::after {
+  content: "";
+  position: absolute;
+
+  width: 900px;
+  height: 900px;
+
+  top: 200px;
+  right: -760px;
+  left: auto;
+  bottom: auto;
+
+  border: 3px solid rgba(226, 174, 79, 0.62);
+  border-radius: 50%;
+  transform: none;
+
+  box-shadow:
+    0 0 25px rgba(235, 173, 66, 0.22),
+    0 0 100px rgba(185, 112, 43, 0.18);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* ========================================
+   LUXURY HERO BACKGROUND
+======================================== */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      ellipse at 85% 15%,
+      rgba(191, 123, 52, 0.35),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 5% 85%,
+      rgba(155, 86, 37, 0.28),
+      transparent 48%
+    ),
+    linear-gradient(
+      120deg,
+      #130c08 0%,
+      #25170f 55%,
+      #3c2517 100%
+    );
+}
+
+/* HERO — TOP RIGHT GOLDEN ARC */
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  top: -420px;
+  right: -230px;
+
+  border: 2px solid rgba(224, 174, 80, 0.55);
+  border-radius: 50%;
+  transform: none;
+
+  box-shadow:
+    0 0 45px rgba(212, 175, 55, 0.15),
+    0 0 100px rgba(184, 111, 42, 0.10);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* HERO — BOTTOM LEFT GOLDEN ARC */
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  bottom: -340px;
+  left: -180px;
+
+  border: 2px solid rgba(224, 174, 80, 0.35);
+  border-radius: 50%;
+  transform: none;
+
+  box-shadow:
+    0 0 35px rgba(212, 175, 55, 0.12);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* HOMEPAGE FULL BACKGROUND HERO */
+.hero-section {
+  display: flex;
+  align-items: center;
+  min-height: 550px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15, 8, 5, 0.90) 0%,
+      rgba(15, 8, 5, 0.72) 30%,
+      rgba(15, 8, 5, 0.28) 60%,
+      rgba(15, 8, 5, 0.05) 100%
+    ),
+    url('/images/home-background.png') center center / cover no-repeat;
+}
+
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+.hero-section .hero-image {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 550px;
+    padding: 60px 6%;
+    background-position: 60% center;
+  }
+}
+
+
+/* AURA PERFUMES - LUXURY CART THEME */
+
+.cart-backdrop {
+  background: rgba(20, 11, 7, 0.65);
+}
+
+.cart-drawer {
+  background: #eae3d7;
+  box-shadow: -12px 0 45px rgba(0, 0, 0, 0.3);
+  border-left: 2px solid #b99550;
+}
+
+.cart-drawer-header {
+  background: #eae3d7;
+  border-bottom: 1px solid #cdbb9d;
+}
+
+.cart-drawer-header h2 {
+  color: #291b13;
+  font-family: Georgia, serif;
+  font-size: 28px;
+}
+
+.cart-drawer-header button {
+  color: #614b30;
+}
+
+.cart-drawer-header button:hover {
+  color: #a77b2c;
+}
+
+.cart-drawer-items {
+  background: #f5efe5;
+}
+
+.cart-drawer-item {
+  border-bottom: 1px solid #d8c8af;
+}
+
+.cart-drawer-item h3,
+.cart-product-info h3 {
+  color: #291b13;
+}
+
+.cart-drawer-item p,
+.cart-product-info p {
+  color: #766450;
+}
+
+.cart-drawer-item strong {
+  color: #96702c;
+}
+
+.cart-product-image {
+  background: #eae3d7;
+  border: 1px solid #ddc9a5;
+  border-radius: 8px;
+}
+
+.cart-quantity-controls {
+  border-color: #c9ae7b;
+}
+
+.cart-quantity-controls button {
+  background: #eae3d7;
+  color: #291b13;
+}
+
+.cart-quantity-controls button:hover:not(:disabled) {
+  background: #d9c39a;
+}
+
+.cart-quantity-controls span {
+  color: #291b13;
+}
+
+.cart-remove-button {
+  color: #895d3b;
+}
+
+.cart-remove-button:hover {
+  color: #5b321c;
+}
+
+.cart-drawer-footer {
+  background: #eae3d7;
+  border-top: 1px solid #cdbb9d;
+}
+
+.cart-total {
+  color: #291b13;
+}
+
+.cart-total strong {
+  color: #96702c;
+}
+
+.checkout-button {
+  background: #a77b2c;
+  color: #fffaf1;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.checkout-button:disabled {
+  background: #b9a17a;
+  color: #fffaf1;
+  opacity: 0.65;
+}
+
+
+/* AURA PERFUMES - EMPTY CART STYLING */
+
+.cart-drawer-items > p {
+  color: #4b3425;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.cart-drawer-items > a {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 13px 24px;
+  background: #a77b2c;
+  color: #fffaf1;
+  border: 1px solid #a77b2c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.cart-drawer-items > a:hover {
+  background: #291b13;
+  border-color: #291b13;
+  color: #fffaf1;
+}
+
+/* Prevent horizontal overflow */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+/* Main React container */
+#root {
+  min-height: 100vh;
+}
+
+/* Keep sections within screen width */
+.aura-page {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 2;
+}
+/* Cart drawer above the website header */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+/* Cart Slide Animation */
+@keyframes auraCartSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cart-drawer {
+  animation: auraCartSlideIn 0.35s ease-out both;
+}
+/* Checkout Page */
+.checkout-page {
+  min-height: 100vh;
+  padding: 55px 6% 90px;
+  background: #f5efe5;
+  color: #241810;
+}
+
+.checkout-page > a {
+  color: #956c32;
+  text-decoration: none;
+}
+
+.checkout-page h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 22px 0 10px;
+}
+
+.checkout-page > p {
+  color: #786b5e;
+  margin-bottom: 35px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.checkout-details,
+.checkout-summary {
+  padding: 30px;
+  border: 1px solid #d9c9b1;
+  background: #fffaf2;
+}
+
+.checkout-layout h2 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+#checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.checkout-name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+#checkout-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+#checkout-form input,
+#checkout-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9c9b1;
+  background: #f8f2e8;
+  color: #241810;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+#checkout-form input:focus,
+#checkout-form textarea:focus {
+  outline: 2px solid #bd913d;
+}
+
+#checkout-form button {
+  padding: 15px;
+  background: #241810;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#checkout-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout,
+  .checkout-name-row {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-page {
+    padding: 35px 5%;
+  }
+}
+/* Checkout Order Summary */
+.checkout-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid #dfd0b8;
+}
+
+.checkout-item img {
+  width: 70px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #e2d2b9;
+}
+
+.checkout-item-info {
+  flex: 1;
+}
+
+.checkout-item-info strong {
+  font-size: 15px;
+  color: #241810;
+}
+
+.checkout-item-info p {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #8c7860;
+}
+
+.checkout-item > strong {
+  color: #a47629;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.checkout-total strong {
+  color: #a47629;
+  font-weight: 500;
+}
+/* Checkout sizing - Demo website reference */
+
+@media (min-width: 769px) {
+  .checkout-page {
+    padding: 15px 0 90px;
+  }
+
+  .checkout-page > a,
+  .checkout-page > h1,
+  .checkout-page > p,
+  .checkout-layout {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .checkout-layout {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 54px;
+  }
+
+  .checkout-details,
+  .checkout-summary {
+    padding: 30px;
+  }
+
+  #checkout-form {
+    gap: 22px;
+  }
+
+  #checkout-form input {
+    min-height: 58px;
+  }
+
+  #checkout-form textarea {
+    min-height: 108px;
+  }
+
+  .checkout-name-row {
+    gap: 16px;
+  }
+}
+/* Continue Shopping alignment */
+@media (min-width: 769px) {
+  .checkout-page > a {
+    display: block;
+    width: 100%;
+    max-width: 1220px;
+    box-sizing: border-box;
+    margin: 0 auto 15px;
+  }
+}
+/* ===== AURA ADMIN LOGIN ===== */
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f5efe4;
+  color: #191511;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 462px;
+  padding: 50px 45px;
+  background: #fffaf1;
+  border: 1px solid #ded2bf;
+  box-shadow: 0 22px 45px rgba(50, 38, 20, 0.12);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.admin-login-brand {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  letter-spacing: 9px;
+  color: #bd8e3b;
+  margin-bottom: 18px;
+}
+
+.admin-login-card h1 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+
+.admin-login-card > p {
+  color: #93806d;
+  margin-bottom: 38px;
+}
+
+.admin-login-card form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 12px;
+}
+
+.admin-login-card label {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.admin-login-card input {
+  width: 100%;
+  height: 58px;
+  padding: 14px;
+  border: 1px solid #dacdb8;
+  background: #f6efe3;
+  color: #191511;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.admin-password-field {
+  display: flex;
+  position: relative;
+}
+
+.admin-password-field input {
+  padding-right: 70px;
+}
+
+.admin-password-field button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #93806d;
+  cursor: pointer;
+}
+
+.admin-login-card form > button {
+  height: 56px;
+  margin-top: 14px;
+  border: none;
+  background: #191511;
+  color: #fff;
+  font-size: 15px;
+}
+
+.admin-login-card form > button:disabled {
+  cursor: not-allowed;
+}
+
+.admin-login-card > a {
+  display: inline-block;
+  margin-top: 26px;
+  color: #93806d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .admin-login-card {
+    padding: 35px 24px;
+  }
+}
+/* Checkout - Luxury Dark & Gold Theme */
+
+.checkout-page {
+  background:
+    radial-gradient(
+      ellipse at 8% 25%,
+      rgba(140, 75, 32, 0.45),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 95% 75%,
+      rgba(140, 75, 32, 0.35),
+      transparent 45%
+    ),
+    linear-gradient(135deg, #26150d, #17110e 65%, #28170e);
+
+  color: #f8efe3;
+}
+
+.checkout-page h1 {
+  color: #f8efe3;
+}
+
+.checkout-page > p {
+  color: #d5bd9f;
+}
+
+.checkout-page > a {
+  color: #d9ac45;
+}
+/* Checkout - Fix Text Inside Cream Cards */
+
+.checkout-details,
+.checkout-summary {
+  color: #241810;
+}
+
+.checkout-layout h2,
+.checkout-total span,
+#checkout-form label {
+  color: #241810;
+}
+
+#checkout-form input,
+#checkout-form textarea {
+  color: #241810;
+}
+/* Checkout - Golden Decorative Curves */
+
+.checkout-page {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.checkout-page::before,
+.checkout-page::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 650px;
+  border: 2px solid rgba(211, 157, 60, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.checkout-page::before {
+  top: -350px;
+  left: -350px;
+}
+
+.checkout-page::after {
+  right: -350px;
+  bottom: -350px;
+}
+/* Admin Login - Dark Gold Theme */
+
+.admin-login-page {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      ellipse at 8% 25%,
+      rgba(140, 75, 32, 0.45),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 95% 75%,
+      rgba(140, 75, 32, 0.35),
+      transparent 45%
+    ),
+    linear-gradient(135deg, #26150d, #17110e 65%, #28170e);
+
+  min-height: 100vh;
+}
+
+/* Golden Decorative Curves */
+
+.admin-login-page::before,
+.admin-login-page::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 650px;
+  border: 2px solid rgba(211, 157, 60, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.admin-login-page::before {
+  top: -350px;
+  left: -350px;
+}
+
+.admin-login-page::after {
+  right: -350px;
+  bottom: -350px;
+}
+/* AURA Admin Dashboard Layout */
+
+.admin-dashboard-page {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Left Sidebar */
+
+.admin-sidebar {
+  width: 245px;
+  flex-shrink: 0;
+  background: #171310;
+  color: #f8efe3;
+  padding: 35px 20px;
+  box-sizing: border-box;
+}
+
+.admin-brand {
+  padding: 0 10px 25px;
+  border-bottom: 1px solid #42362b;
+}
+
+.admin-brand h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  color: #d6ad60;
+  margin: 0 0 10px;
+}
+
+.admin-brand p {
+  color: #b5a28a;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.admin-nav a,
+.admin-sidebar-bottom a {
+  display: block;
+  padding: 15px 14px;
+  color: #e8dccb;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+  background: #342a20;
+  border-left: 3px solid #d6ad60;
+  color: #ffffff;
+}
+
+.admin-sidebar-bottom {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid #42362b;
+}
+
+/* Dashboard Content */
+
+.admin-content {
+  flex: 1;
+  min-width: 0;
+  padding: 45px 35px;
+  color: #f8efe3;
+}
+
+.admin-content h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.admin-content > p {
+  color: #d5bd9f;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .admin-content {
+    padding: 30px 20px;
+  }
+}
+/* AURA Admin - Premium Dashboard Cards */
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.admin-stat-card {
+  position: relative;
+  overflow: hidden;
+  padding: 26px 24px;
+  min-height: 165px;
+  background: linear-gradient(145deg, #fffaf1, #f2e7d6);
+  border: 1px solid #d8bc8a;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.admin-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #a9762e, #e4c478);
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+.admin-stat-card p {
+  margin: 0 0 18px;
+  color: #786753;
+  font-size: 14px;
+}
+
+.admin-stat-card h2 {
+  margin: 0 0 12px;
+  color: #241810;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.admin-stat-card span {
+  color: #947e65;
+  font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+  .admin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* Admin Dashboard - Golden Decorative Curves */
+
+.admin-dashboard-page {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.admin-dashboard-page::before,
+.admin-dashboard-page::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 650px;
+  border: 2px solid rgba(204, 157, 57, 0.65);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.admin-dashboard-page::before {
+  top: -400px;
+  left: -320px;
+  transform: rotate(25deg);
+}
+
+.admin-dashboard-page::after {
+  right: -340px;
+  bottom: -350px;
+  transform: rotate(-25deg);
+}
+/* Admin Dashboard - Orders Overview */
+
+.admin-orders-overview {
+  margin-top: 30px;
+  padding: 28px;
+  background: #f7f0e5;
+  border: 1px solid #d6b77b;
+  border-radius: 18px;
+  color: #392219;
+}
+
+.admin-orders-overview h2 {
+  font-size: 22px;
+  margin: 0 0 25px;
+  color: #392219;
+}
+
+.admin-orders-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 15px;
+  min-height: 210px;
+  padding: 20px 10px 0;
+  border-bottom: 1px solid #d6b77b;
+}
+
+.admin-chart-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.admin-chart-bar {
+  width: 100%;
+  max-width: 48px;
+  min-height: 5px;
+  background: linear-gradient(180deg, #d9b36a, #a87834);
+  border-radius: 8px 8px 0 0;
+}
+
+.admin-chart-column span {
+  color: #705344;
+  font-size: 13px;
+  padding-bottom: 12px;
+}
+/* Admin Dashboard - Stock Status */
+
+.admin-stock-status {
+  margin-top: 28px;
+  padding: 28px;
+  background: #f7f0e5;
+  border: 1px solid #d6b77b;
+  border-radius: 18px;
+  color: #392219;
+}
+
+.admin-stock-status h2 {
+  font-size: 22px;
+  margin: 0 0 22px;
+  color: #392219;
+}
+
+.admin-stock-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.admin-stock-item {
+  background: #fffaf2;
+  border: 1px solid #e5d3b7;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-stock-item span {
+  font-size: 15px;
+  color: #705344;
+}
+
+.admin-stock-item strong {
+  font-size: 26px;
+  color: #b58a45;
+}
+
+@media (max-width: 600px) {
+  .admin-stock-items {
+    grid-template-columns: 1fr;
+  }
+}
+/* Admin Dashboard - Top Trending Products */
+
+.admin-trending-products {
+  margin-top: 28px;
+  padding: 28px;
+  background: #f7f0e5;
+  border: 1px solid #d6b77b;
+  border-radius: 18px;
+  color: #392219;
+}
+
+.admin-trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.admin-trending-header h2 {
+  font-size: 22px;
+  color: #392219;
+  margin: 0;
+}
+
+.admin-trending-header a {
+  color: #a87834;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admin-trending-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  background: #fffaf2;
+  border: 1px solid #e5d3b7;
+  border-radius: 12px;
+}
+
+.admin-trending-rank {
+  font-size: 24px;
+  font-weight: 700;
+  color: #b58a45;
+}
+
+.admin-trending-item h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  color: #392219;
+}
+
+.admin-trending-item p {
+  margin: 0;
+  font-size: 13px;
+  color: #806b5b;
+}
+
+.admin-trending-tag {
+  margin-left: auto;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #ead7ae;
+  color: #79521f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .admin-trending-products {
+    padding: 18px;
+  }
+
+  .admin-trending-item {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .admin-trending-tag {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+}
+/* Dashboard Compact Three-Column Layout */
+
+@media (min-width: 1100px) {
+  .admin-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px 14px;
+    align-content: start;
+  }
+
+  .admin-content > h1,
+  .admin-content > p,
+  .admin-stats {
+    grid-column: 1 / -1;
+  }
+
+  .admin-orders-overview,
+  .admin-stock-status,
+  .admin-trending-products {
+    grid-column: auto;
+    margin-top: 0;
+    min-width: 0;
+    padding: 22px;
+  }
+
+  .admin-orders-overview h2,
+  .admin-stock-status h2,
+  .admin-trending-header h2 {
+    font-size: 19px;
+  }
+
+  .admin-orders-chart {
+    gap: 6px;
+    min-height: 210px;
+    padding: 15px 0 0;
+  }
+
+  .admin-chart-bar {
+    max-width: 35px;
+  }
+
+  .admin-trending-item {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .admin-stock-items {
+    grid-template-columns: 1fr;
+  }
+}
+/* Admin Dashboard - Latest Orders */
+
+.admin-latest-orders {
+  margin-top: 28px;
+  padding: 28px;
+  background: #f7f0e5;
+  border: 1px solid #d6b77b;
+  border-radius: 18px;
+  color: #392219;
+  min-width: 0;
+}
+
+.admin-latest-orders h2 {
+  font-size: 22px;
+  margin: 0;
+  color: #392219;
+}
+
+.admin-orders-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-orders-table th {
+  padding: 15px;
+  background: #eadcc7;
+  color: #5a3b27;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.admin-orders-table td {
+  padding: 16px 15px;
+  border-bottom: 1px solid #e5d3b7;
+  color: #5a4031;
+  font-size: 14px;
+}
+
+.admin-orders-table tbody tr:hover {
+  background: #fffaf2;
+}
+
+/* Latest Orders Full Width */
+
+@media (min-width: 1100px) {
+  .admin-latest-orders {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-latest-orders {
+    padding: 18px;
+  }
+
+  .admin-orders-table {
+    min-width: 500px;
+  }
+}
+/* Orders Chart - Zero Orders Fix */
+
+.admin-chart-bar {
+  min-height: 4px;
+  transition: height 0.3s ease;
+}
+
+.admin-chart-column {
+  min-width: 0;
+}
+/* Admin Dashboard - Stock Circular Chart */
+
+.admin-stock-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.admin-stock-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-stock-circle-inner {
+  width: 112px;
+  height: 112px;
+  background: #f7f0e5;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-stock-circle-inner strong {
+  font-size: 30px;
+  color: #392219;
+}
+
+.admin-stock-circle-inner span {
+  font-size: 12px;
+  color: #806b5b;
+}
+/* AURA PERFUMES - ABOUT PAGE */
+
+.about-page {
+  min-height: 75vh;
+  background: linear-gradient(
+    135deg,
+    #1b100c 0%,
+    #342016 65%,
+    #4b2d1c 100%
+  );
+  color: #f8edda;
+}
+
+.about-hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 110px 25px 120px;
+  text-align: center;
+}
+
+.about-label {
+  color: #d6aa5b;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.about-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #f9ebd4;
+  margin: 0 0 25px;
+}
+
+.about-hero > p:last-child {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #dfcbb7;
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 75px 20px 90px;
+  }
+
+  .about-hero > p:last-child {
+    font-size: 15px;
+  }
+}
+/* ABOUT PAGE - OUR STORY */
+
+.about-story {
+  background: #f7eddd;
+  padding: 90px 25px;
+  border-top: 1px solid #c49a55;
+  border-bottom: 1px solid #c49a55;
+}
+
+.about-story-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-story .about-label {
+  color: #a87834;
+}
+
+.about-story h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+  color: #392219;
+  margin: 0 0 28px;
+}
+
+.about-story-content > p:not(.about-label) {
+  color: #705344;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+  .about-story {
+    padding: 65px 20px;
+  }
+}
+/* ABOUT PAGE - OUR MISSION */
+
+.about-mission {
+  padding: 100px 25px;
+  background: linear-gradient(
+    135deg,
+    #1b100c 0%,
+    #342016 60%,
+    #4b2d1c 100%
+  );
+  color: #f8edda;
+}
+
+.about-mission-content {
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-mission h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 400;
+  color: #f9ebd4;
+  margin: 0 0 25px;
+}
+
+.about-mission-content > p:not(.about-label) {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #dfcbb7;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.about-mission-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-mission-values > div {
+  padding: 38px 25px;
+  background: rgba(255, 248, 234, 0.06);
+  border: 1px solid rgba(214, 170, 91, 0.4);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.about-mission-values > div:hover {
+  transform: translateY(-5px);
+  border-color: #d6aa5b;
+}
+
+.about-mission-values span {
+  display: block;
+  color: #d6aa5b;
+  font-size: 24px;
+  font-family: Georgia, serif;
+  margin-bottom: 18px;
+}
+
+.about-mission-values h3 {
+  color: #f9ebd4;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.about-mission-values p {
+  color: #dfcbb7;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .about-mission {
+    padding: 70px 20px;
+  }
+
+  .about-mission-values {
+    grid-template-columns: 1fr;
+  }
+}
+/* ABOUT - STORY & MISSION CARDS */
+
+.about-story-mission {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding: 45px 4%;
+  background: #fffaf3;
+}
+
+.about-info-card {
+  min-height: 390px;
+  display: grid;
+  grid-template-columns: 62% 38%;
+  overflow: hidden;
+  border-radius: 28px;
+  position: relative;
+}
+
+.about-story-card {
+  background: #f5e7d0;
+}
+
+.about-mission-card {
+  background: #e4ecd9;
+}
+
+.about-info-text {
+  padding: 38px 20px 38px 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-card-icon {
+  display: block;
+  font-size: 42px;
+  color: #a87535;
+  margin-bottom: 18px;
+}
+
+.about-mission-card .about-card-icon {
+  color: #52734d;
+}
+
+.about-info-text .about-label {
+  color: #a87535;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.about-mission-card .about-label {
+  color: #52734d;
+}
+
+.about-info-text h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(24px, 2.3vw, 36px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #332017;
+  margin: 0 0 20px;
+}
+
+.about-info-text > p:not(.about-label) {
+  color: #604a3b;
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.about-mission-card .about-info-text > p:not(.about-label) {
+  color: #3e5540;
+}
+
+.about-story-image,
+.about-mission-image {
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 48% 0 0 0;
+  border-left: 2px solid #c99e5a;
+}
+
+@media (max-width: 1050px) {
+  .about-story-mission {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-story-mission {
+    padding: 25px 16px;
+    gap: 18px;
+  }
+
+  .about-info-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .about-info-text {
+    padding: 30px 24px;
+  }
+
+  .about-story-image,
+  .about-mission-image {
+    min-height: 180px;
+    border-radius: 0;
+  }
+}
+/* ABOUT PAGE - STORY & MISSION IMAGES */
+
+.about-story-image {
+  background-color: #e7d2ae;
+  background-image: url('/images/products/noor-oud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-mission-image {
+  background-color: #d7e2c9;
+  background-image: url('/images/products/jasmin-veil.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ABOUT PAGE - WHY CHOOSE AURA */
+
+.about-why {
+  padding: 85px 5%;
+  background: linear-gradient(135deg, #1b100c, #3c2418);
+  text-align: center;
+}
+
+.about-why > .about-label {
+  color: #d6aa5b;
+}
+
+.about-why > h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+  color: #f9ebd4;
+  margin: 15px 0 40px;
+}
+
+.about-why-grid {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-why-card {
+  padding: 32px 25px;
+  border: 1px solid #a87834;
+  border-radius: 16px;
+  background: rgba(255, 235, 200, 0.06);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.about-why-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-why-card > span {
+  display: block;
+  color: #d6aa5b;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.about-why-card h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #f9ebd4;
+  margin: 0 0 12px;
+}
+
+.about-why-card p {
+  color: #dfcbb7;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-why {
+    padding: 65px 20px;
+  }
+
+  .about-why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ABOUT PAGE - LUXURY FLORAL BACKGROUND */
+
+.about-hero,
+.about-why {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Warm chocolate lighting */
+.about-hero {
+  background:
+    radial-gradient(
+      ellipse at 85% 45%,
+      rgba(161, 94, 40, 0.32),
+      transparent 55%
+    ),
+    linear-gradient(115deg, #190d09, #422619 75%, #24130e);
+}
+
+.about-why {
+  background:
+    radial-gradient(
+      ellipse at 10% 70%,
+      rgba(143, 85, 43, 0.28),
+      transparent 55%
+    ),
+    linear-gradient(120deg, #1b0e0a, #3c2115, #24120d);
+}
+
+/* Decorative golden curves */
+.about-hero::before,
+.about-why::before {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  border: 2px solid rgba(209, 158, 79, 0.48);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.about-hero::before {
+  top: -310px;
+  left: -220px;
+}
+
+.about-why::before {
+  bottom: -330px;
+  right: -210px;
+}
+
+/* Soft golden glow */
+.about-hero::after,
+.about-why::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(191, 132, 63, 0.14),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.about-hero::after {
+  right: -80px;
+  bottom: -120px;
+}
+
+.about-why::after {
+  left: -100px;
+  top: -100px;
+}
+
+.about-hero > *,
+.about-why > * {
+  position: relative;
+  z-index: 1;
+}
+/* ABOUT HERO - TWO PERFUME IMAGES */
+
+.about-hero {
+  position: relative;
+  max-width: none;
+  min-height: 470px;
+  padding: 95px 43% 95px 6%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hero heading and description */
+.about-hero > p:last-of-type {
+  margin-left: 0;
+  max-width: 620px;
+}
+
+/* Two perfume images container */
+.about-hero-perfumes {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  z-index: 2;
+}
+
+/* Perfume image styling */
+.about-hero-perfumes img {
+  width: 46%;
+  height: 290px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid rgba(214, 170, 91, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+/* Rose Mirage */
+.about-hero-perfumes img:first-child {
+  transform: translateY(-18px) rotate(-4deg);
+}
+
+/* Cedar & Smoke */
+.about-hero-perfumes img:last-child {
+  transform: translateY(18px) rotate(4deg);
+}
+
+/* Remove old single-image decoration */
+.about-hero::after {
+  content: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 70px 20px 40px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .about-hero > p:last-of-type {
+    margin: 0 auto;
+  }
+
+  .about-hero-perfumes {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    height: 270px;
+    margin-top: 35px;
+  }
+
+  .about-hero-perfumes img {
+    width: 42%;
+    max-width: 180px;
+    height: 240px;
+  }
+}
+/* ABOUT PAGE - CLEAN FLORAL BACKGROUND BASE */
+
+.about-hero {
+  background:
+    radial-gradient(
+      ellipse at 75% 45%,
+      rgba(130, 76, 43, 0.3),
+      transparent 65%
+    ),
+    linear-gradient(115deg, #190d09, #342016);
+}
+
+.about-why {
+  background:
+    radial-gradient(
+      ellipse at 80% 30%,
+      rgba(125, 75, 40, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(120deg, #1b0e0a, #3c2115);
+}
+/* ABOUT PAGE - GOLDEN FLORAL DECORATION */
+
+.about-hero,
+.about-why {
+  position: relative;
+  overflow: hidden;
+}
+
+/* AURA PERFUMES - CONTACT PAGE */
+
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1b100c, #342016, #4b2d1c);
+  color: #f8edda;
+}
+
+/* Contact Hero */
+.contact-hero {
+  text-align: center;
+  padding: 85px 20px 55px;
+}
+
+.contact-label {
+  color: #d6aa5b;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.contact-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 65px);
+  font-weight: 400;
+  color: #f9ebd4;
+  margin: 15px 0 20px;
+}
+
+.contact-hero > p:last-child {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #dfcbb7;
+  line-height: 1.8;
+}
+
+/* Contact Layout */
+.contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 25px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+/* Left Content */
+.contact-info h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 400;
+  color: #f9ebd4;
+  margin: 18px 0;
+}
+
+.contact-info > p:last-child {
+  color: #dfcbb7;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 450px;
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  background: #f7eddd;
+  color: #392219;
+  padding: 38px;
+  border-radius: 20px;
+  border: 1px solid #d6b77b;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-card h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  color: #392219;
+}
+
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form-card label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #604a3b;
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+  width: 100%;
+  padding: 13px 15px;
+  background: #fffaf3;
+  border: 1px solid #d9c7ad;
+  border-radius: 9px;
+  color: #392219;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+  outline: none;
+  border-color: #a87834;
+  box-shadow: 0 0 0 3px rgba(168, 120, 52, 0.12);
+}
+
+.contact-form-card button {
+  margin-top: 12px;
+  padding: 15px;
+  background: #392219;
+  color: #f9ebd4;
+  border: 1px solid #a87834;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form-card button:hover {
+  background: #65402a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 65px 20px 35px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 25px 20px 70px;
+  }
+
+  .contact-form-card {
+    padding: 25px 20px;
+  }
+}
+/* CONTACT PAGE - GOLDEN FLORAL DETAILS */
+
+.contact-section {
+  position: relative;
+  isolation: isolate;
+}
+
+.contact-section::before {
+  content: "✿";
+  position: absolute;
+  left: -65px;
+  bottom: 10px;
+  font-family: Georgia, serif;
+  font-size: 230px;
+  line-height: 1;
+  color: rgba(214, 170, 91, 0.09);
+  transform: rotate(-20deg);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.contact-info {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form-card {
+  position: relative;
+  z-index: 1;
+}
+/* ABOUT HERO - CLEAN PERFUME PHOTOS */
+
+.about-hero-perfumes {
+  gap: 25px;
+  align-items: center;
+}
+
+.about-hero-perfumes img {
+  width: 46%;
+  height: 290px;
+  object-fit: cover;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-perfumes img:first-child {
+  transform: translateY(-12px);
+}
+
+.about-hero-perfumes img:last-child {
+  transform: translateY(12px);
+}
+/* ABOUT HERO - LUXURY GOLDEN FLORAL ART */
+
+.about-floral-art {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+  height: 350px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.floral-ring {
+  position: absolute;
+  border: 1px solid rgba(214, 170, 91, 0.4);
+  border-radius: 50%;
+}
+
+.floral-ring-one {
+  width: 260px;
+  height: 260px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.floral-ring-two {
+  width: 190px;
+  height: 190px;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%) rotate(30deg);
+  border-style: dashed;
+  opacity: 0.5;
+}
+
+.floral-flower {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 175px;
+  line-height: 1;
+  color: #c99b53;
+  text-shadow: 0 0 45px rgba(214, 170, 91, 0.22);
+}
+
+.floral-leaf {
+  position: absolute;
+  color: #a88148;
+  font-size: 95px;
+  line-height: 1;
+}
+
+.floral-leaf-one {
+  left: 4%;
+  bottom: 15px;
+  transform: rotate(-35deg);
+}
+
+.floral-leaf-two {
+  right: 4%;
+  top: 5px;
+  transform: rotate(145deg);
+}
+
+.floral-sparkle {
+  position: absolute;
+  color: #e3bd78;
+  font-size: 25px;
+}
+
+.floral-sparkle-one {
+  top: 30px;
+  left: 15%;
+}
+
+.floral-sparkle-two {
+  right: 12%;
+  bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .about-floral-art {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    margin: 30px auto 0;
+  }
+
+  .floral-ring-one {
+    width: 230px;
+    height: 230px;
+  }
+
+  .floral-ring-two {
+    width: 170px;
+    height: 170px;
+    top: 70px;
+  }
+
+  .floral-flower {
+    font-size: 150px;
+  }
+}
+/* ABOUT PAGE - NEW HERO BACKGROUND */
+
+.about-hero {
+  background-image: url('/images/about-hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide previous floral decoration */
+.about-floral-art {
+  display: none;
+}
+
+/* Hide old decorative flower */
+.about-hero::before {
+  content: none;
+}
+/* AURA PERFUMES - GLOBAL FONT */
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, span, label, li {
+  font-family: Georgia, "Times New Roman", serif;
+}
+/* CONTACT PAGE - LUXURY GOLDEN CURVES */
+
+.contact-page {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Left Golden Curve */
+.contact-page::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  left: -220px;
+  width: 450px;
+  height: 450px;
+  border: 2px solid rgba(212, 163, 80, 0.55);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Bottom Right Golden Curve */
+.contact-page::after {
+  content: "";
+  position: absolute;
+  right: -200px;
+  bottom: -220px;
+  width: 460px;
+  height: 460px;
+  border: 2px solid rgba(212, 163, 80, 0.45);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-hero,
+.contact-section {
+  position: relative;
+  z-index: 1;
+}
+/* ADMIN ORDERS - AURA LUXURY THEME */
+
+.admin-orders-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 55px 5% 100px;
+
+  background:
+    radial-gradient(
+      ellipse at 85% 85%,
+      rgba(130, 75, 35, 0.35),
+      transparent 55%
+    ),
+    linear-gradient(
+      120deg,
+      #190d09,
+      #342016
+    );
+
+  color: #f8edda;
+}
+
+/* TOP LEFT GOLDEN CURVE */
+
+.admin-orders-page::before {
+  content: "";
+  position: absolute;
+  top: -230px;
+  left: -230px;
+  width: 460px;
+  height: 460px;
+  border: 2px solid rgba(214, 170, 91, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* BOTTOM RIGHT GOLDEN CURVE */
+
+.admin-orders-page::after {
+  content: "";
+  position: absolute;
+  right: -230px;
+  bottom: -230px;
+  width: 480px;
+  height: 480px;
+  border: 2px solid rgba(214, 170, 91, 0.55);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* HEADINGS */
+
+.admin-orders-page h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #f9ebd4;
+  margin-bottom: 12px;
+}
+
+.admin-orders-page > p {
+  color: #dfcbb7;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+/* PREMIUM TABLE */
+
+.admin-orders-page .admin-orders-table-wrap {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  background: #f8edda;
+  border: 1px solid #c9a15d;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.admin-orders-page .admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #392219;
+}
+
+.admin-orders-page .admin-orders-table th {
+  background: #e8d6bc;
+  color: #392219;
+  padding: 17px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.admin-orders-page .admin-orders-table td {
+  padding: 17px;
+  color: #392219;
+  border-bottom: 1px solid #dfcfb9;
+  line-height: 1.7;
+}
+
+.admin-orders-page .admin-orders-table tbody tr:nth-child(even) {
+  background: #f1e4d1;
+}
+
+.admin-orders-page .admin-orders-table tbody tr:hover {
+  background: #e9d7bd;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .admin-orders-page {
+    padding: 35px 20px 70px;
+  }
+
+  .admin-orders-page h1 {
+    font-size: 32px;
+  }
+
+  .admin-orders-page .admin-orders-table {
+    min-width: 850px;
+  }
+}
+/* AURA ADMIN - ORDER STATUS DROPDOWN */
+
+.admin-orders-page .admin-order-status {
+  appearance: auto;
+  min-width: 145px;
+  padding: 9px 12px;
+  border: 1px solid #b88a49;
+  border-radius: 8px;
+  background-color: #fff8ed;
+  color: #4b2a19;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.admin-orders-page .admin-order-status:hover {
+  background-color: #f1dfc3;
+  border-color: #9b6a2c;
+}
+
+.admin-orders-page .admin-order-status:focus {
+  border-color: #c9a15d;
+  box-shadow: 0 0 0 3px rgba(201, 161, 93, 0.2);
+}
+
+.admin-orders-page .admin-order-status option {
+  background: #fff8ed;
+  color: #392219;
+}
+/* AURA ADMIN ORDERS - SIDEBAR LAYOUT FIX */
+
+.admin-dashboard-page.admin-orders-page {
+  padding: 0;
+  overflow: visible;
+  background: #1a110e;
+}
+
+.admin-orders-page .admin-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.admin-orders-page .admin-sidebar {
+  flex-shrink: 0;
+}
+
+.admin-orders-page .admin-content {
+  flex: 1;
+  min-width: 0;
+  padding: 40px 30px;
+}
+
+.admin-orders-page .admin-content h1 {
+  color: #f8ead7;
+  font-size: 38px;
+}
+
+.admin-orders-page .admin-content > p {
+  color: #d7bfa5;
+  margin-bottom: 30px;
+}
+
+.admin-orders-page .admin-orders-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  background: #f8f0e4;
+}
+
+.admin-orders-page .admin-orders-table {
+  width: 100%;
+  min-width: 850px;
+  table-layout: auto;
+}
+
+.admin-orders-page .admin-orders-table th,
+.admin-orders-page .admin-orders-table td {
+  padding: 15px 12px;
+  vertical-align: middle;
+}
+
+.admin-orders-page .admin-orders-table td {
+  overflow-wrap: normal;
+}
+
+.admin-orders-page .admin-order-status {
+  min-width: 145px;
+}
+/* FIX ORDERS TABLE FULL WIDTH */
+
+.admin-orders-page .admin-layout {
+  width: 100%;
+  min-width: 0;
+}
+
+.admin-orders-page .admin-content {
+  display: block;
+  flex: 1 1 0%;
+  width: 0;
+  min-width: 0;
+  max-width: none;
+}
+
+.admin-orders-page .admin-orders-table-wrap {
+  display: block;
+  width: 100%;
+  max-width: none;
+  overflow-x: auto;
+}
+
+.admin-orders-page .admin-orders-table {
+  width: 100%;
+  min-width: 950px;
+}
+/* AURA ADMIN - PRODUCTS TABLE */
+
+.admin-content:has(.admin-products-table-wrap) {
+  display: block;
+  flex: 1 1 0%;
+  min-width: 0;
+  width: auto;
+}
+
+.admin-products-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 30px;
+  overflow-x: auto;
+  border: 1px solid #c9a15d;
+  border-radius: 14px;
+  background: #f8f0e4;
+}
+
+.admin-products-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  color: #392219;
+}
+
+.admin-products-table th {
+  background: #e8d6bc;
+  color: #392219;
+  padding: 17px 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.admin-products-table td {
+  padding: 16px 15px;
+  border-bottom: 1px solid #dfcfb9;
+  color: #392219;
+  font-size: 14px;
+}
+
+.admin-products-table tbody tr:nth-child(even) {
+  background: #f1e4d1;
+}
+
+.admin-products-table tbody tr:hover {
+  background: #e9d7bd;
+}
+
+.admin-products-table tbody tr:last-child td {
+  border-bottom: none;
+}
+/* Admin Products - Stock Design */
+
+.admin-stock-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.admin-stock-badge.in-stock {
+  background: #d9efdc;
+  color: #32814c;
+}
+
+.admin-stock-badge.out-of-stock {
+  background: #f8d6d6;
+  color: #c43d3d;
+}
+
+.admin-stock-input {
+  width: 75px;
+  height: 36px;
+  padding: 7px 10px;
+  background: #fffaf2;
+  border: 1px solid #d3b98e;
+  border-radius: 5px;
+  color: #392219;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.admin-stock-input:focus {
+  outline: 2px solid #c9a15d;
+  outline-offset: 1px;
+}
+
+.admin-products-table td button {
+  margin-left: 8px;
+  padding: 9px 15px;
+  background: #392219;
+  color: #f3d69e;
+  border: 1px solid #c9a15d;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.admin-products-table td button:hover {
+  background: #60402b;
+}
+/* Admin Products - Perfume Images */
+
+.admin-product-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-product-image {
+  width: 48px;
+  height: 58px;
+  object-fit: contain;
+  background: #eee0c8;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.admin-product-info span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #392219;
+  white-space: nowrap;
+}
+
+/* Customers Management */
+
+.admin-customers-page .admin-customers-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.admin-customers-toolbar input {
+  width: min(100%, 420px);
+  padding: 14px 16px;
+  border: 1px solid #d8bd91;
+  border-radius: 8px;
+  background: #fffaf2;
+  color: #352014;
+  font: inherit;
+}
+
+.admin-customers-toolbar span {
+  color: #e8c99b;
+  white-space: nowrap;
+}
+
+.admin-customers-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #d9c4a4;
+}
+
+.admin-customers-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8f0e4;
+  color: #382114;
+}
+
+.admin-customers-table-wrap th {
+  padding: 18px 16px;
+  text-align: left;
+  background: #e7d4b8;
+  color: #321d12;
+  font-weight: 700;
+}
+
+.admin-customers-table-wrap td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #dfcdb4;
+  color: #382114;
+  vertical-align: middle;
+}
+
+.admin-customers-table-wrap tbody tr:nth-child(even) {
+  background: #f1e3cf;
+}
+
+.admin-customers-table-wrap tbody tr:nth-child(odd) {
+  background: #faf2e7;
+}
+
+.admin-customers-table-wrap td div {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #795c45;
+}
+
+.admin-customers-table-wrap button,
+.admin-customer-details button {
+  padding: 10px 16px;
+  border: 1px solid #b58a51;
+  border-radius: 6px;
+  background: #382114;
+  color: #f5d9a5;
+  cursor: pointer;
+  font: inherit;
+}
+
+.admin-customers-table-wrap button:hover,
+.admin-customer-details button:hover {
+  background: #614027;
+}
+
+.admin-customer-details {
+  margin-top: 30px;
+  padding: 28px;
+  background: #f8f0e4;
+  color: #382114;
+  border-radius: 12px;
+}
+
+.admin-customer-details h2,
+.admin-customer-details h3,
+.admin-customer-details h4,
+.admin-customer-details p {
+  color: #382114;
+}
+
+.admin-customer-order {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddc6a6;
+  border-radius: 10px;
+  background: #fffaf3;
+}
+
+.admin-customer-product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.admin-customer-product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .admin-customers-page .admin-customers-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-customers-table-wrap table {
+    min-width: 750px;
+  }
+
+  .admin-customer-details {
+    padding: 18px;
+  }
+}
+
+/* Customers page layout fix */
+
+.admin-customers-page .admin-content {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.admin-customers-page .admin-customers-toolbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 18px;
+}
+
+.admin-customers-page .admin-customers-table-wrap {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.admin-customers-page .admin-customers-table-wrap table {
+  width: 100%;
+  min-width: 850px;
+  table-layout: auto;
+}
+
+.admin-customers-page .admin-customers-table-wrap th,
+.admin-customers-page .admin-customers-table-wrap td {
+  white-space: normal;
+  vertical-align: middle;
+}
+
+.admin-customers-page .admin-customers-table-wrap button {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .admin-customers-page .admin-customers-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* AURA PERFUMES — REPORTS DASHBOARD */
+
+.admin-reports-page .admin-reports-overview {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.admin-reports-page .admin-reports-overview h2 {
+  font-size: 22px;
+  margin-bottom: 22px;
+  color: #3b2519;
+}
+
+.admin-reports-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.admin-report-card {
+  background: linear-gradient(145deg, #302017, #1c120e);
+  border: 1px solid #6d5032;
+  border-radius: 16px;
+  padding: 25px 20px;
+  min-height: 170px;
+  box-shadow: 0 8px 24px rgba(35, 20, 12, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(35, 20, 12, 0.2);
+}
+
+.admin-report-card span {
+  color: #d5b88b;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.admin-report-card h3 {
+  color: #f7e8cf;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 18px 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.admin-report-card p {
+  color: #c4ad98;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .admin-reports-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-reports-cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* Reports Dashboard Layout Fix */
+
+.admin-reports-page .admin-content {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.admin-reports-page .admin-reports-overview {
+  width: 100%;
+  max-width: none;
+}
+
+.admin-reports-page .admin-reports-overview h2 {
+  color: #f5e6d0;
+}
+
+.admin-reports-page .admin-reports-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.admin-reports-page .admin-report-card {
+  min-width: 0;
+  width: auto;
+}
+
+.admin-reports-page .admin-report-card h3 {
+  font-size: clamp(20px, 2vw, 28px);
+  overflow-wrap: normal;
+}
+
+@media (max-width: 1100px) {
+  .admin-reports-page .admin-reports-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-reports-page .admin-reports-cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* Reports Cards — Cream & Gold Theme */
+
+.admin-reports-page .admin-report-card {
+  background: #f8f0e4;
+  border: 1px solid #d9bf99;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(40, 23, 12, 0.12);
+}
+
+.admin-reports-page .admin-report-card:nth-child(even) {
+  background: #efdfc9;
+}
+
+.admin-reports-page .admin-report-card span {
+  color: #81572e;
+  font-weight: 600;
+}
+
+.admin-reports-page .admin-report-card h3 {
+  color: #3b2114;
+}
+
+.admin-reports-page .admin-report-card p {
+  color: #80654f;
+}
+
+.admin-reports-page .admin-report-card:hover {
+  box-shadow: 0 10px 25px rgba(40, 23, 12, 0.18);
+}
+/* Reports — Sales Performance Chart */
+
+.admin-reports-page .admin-sales-chart {
+  margin-top: 30px;
+  padding: 28px;
+  background: #f8f0e4;
+  border: 1px solid #d9bf99;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(40, 23, 12, 0.12);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-reports-page .admin-sales-chart-header {
+  margin-bottom: 24px;
+}
+
+.admin-reports-page .admin-sales-chart-header h2 {
+  color: #3b2114;
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.admin-reports-page .admin-sales-chart-header p {
+  color: #80654f;
+  font-size: 14px;
+  margin: 0;
+}
+
+.admin-reports-page .admin-sales-chart .recharts-text {
+  fill: #76583b;
+}
+
+@media (max-width: 650px) {
+  .admin-reports-page .admin-sales-chart {
+    padding: 16px;
+  }
+}
+/* Reports — Best-Selling Perfumes */
+
+.admin-reports-page .admin-best-sellers {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.admin-reports-page .admin-best-sellers h2 {
+  color: #f8ead7;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.admin-reports-page .admin-best-sellers > p {
+  color: #d6b995;
+  margin-bottom: 20px;
+}
+
+.admin-reports-page .admin-best-sellers-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 15px;
+  border: 1px solid #d9bf99;
+}
+
+.admin-reports-page .admin-best-sellers-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.admin-reports-page .admin-best-sellers-table-wrap th {
+  background: #e8d5ba;
+  color: #3b2114;
+  padding: 18px;
+  text-align: left;
+}
+
+.admin-reports-page .admin-best-sellers-table-wrap td {
+  background: #f8f0e4;
+  color: #3b2114;
+  padding: 20px 18px;
+  border-bottom: 1px solid #dfccb2;
+}
+
+.admin-reports-page .admin-best-sellers-table-wrap tbody tr:nth-child(even) td {
+  background: #efdfc9;
+}
+
+.admin-reports-page .admin-best-sellers-table-wrap tbody tr:last-child td {
+  border-bottom: none;
+}
+/* Best-Selling Perfumes — Product Images */
+
+.admin-reports-page .admin-best-seller-product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-reports-page .admin-best-seller-product img {
+  width: 60px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e8d5ba;
+  background: #fff8ef;
+  flex-shrink: 0;
+}
+
+.admin-reports-page .admin-best-seller-product strong {
+  color: #3b2114;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Reports — Order Status Overview */
+
+.admin-reports-page .admin-order-status-report {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.admin-reports-page .admin-order-status-report h2 {
+  color: #f8ead7;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.admin-reports-page .admin-order-status-report > p {
+  color: #d6b995;
+  margin-bottom: 22px;
+}
+
+.admin-reports-page .admin-order-status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-reports-page .admin-order-status-card {
+  background: #f8f0e4;
+  border: 1px solid #d9bf99;
+  border-radius: 14px;
+  padding: 24px;
+  min-width: 0;
+}
+
+.admin-reports-page .admin-order-status-card:nth-child(even) {
+  background: #efdfc9;
+}
+
+.admin-reports-page .admin-order-status-card span {
+  color: #80502c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin-reports-page .admin-order-status-card h3 {
+  color: #3b2114;
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.admin-reports-page .admin-order-status-card p {
+  color: #946d4c;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .admin-reports-page .admin-order-status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-reports-page .admin-order-status-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Reports — Inventory Alerts */
+
+.admin-reports-page .admin-low-stock-report {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.admin-reports-page .admin-low-stock-report h2 {
+  color: #f8ead7;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.admin-reports-page .admin-low-stock-report > p {
+  color: #d6b995;
+  margin-bottom: 20px;
+}
+
+.admin-reports-page .admin-low-stock-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #d9bf99;
+  border-radius: 15px;
+}
+
+.admin-reports-page .admin-low-stock-table-wrap table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+.admin-reports-page .admin-low-stock-table-wrap th {
+  background: #e8d5ba;
+  color: #3b2114;
+  padding: 18px;
+  text-align: left;
+}
+
+.admin-reports-page .admin-low-stock-table-wrap td {
+  background: #f8f0e4;
+  color: #3b2114;
+  padding: 18px;
+  border-bottom: 1px solid #dfccb2;
+  vertical-align: middle;
+}
+
+.admin-reports-page .admin-low-stock-table-wrap tbody tr:nth-child(even) td {
+  background: #efdfc9;
+}
+
+.admin-reports-page .admin-low-stock-table-wrap tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Stock Status Badges */
+
+.admin-reports-page .admin-inventory-badge {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-reports-page .admin-inventory-badge.out {
+  background: #f9dada;
+  color: #a52222;
+}
+
+.admin-reports-page .admin-inventory-badge.low {
+  background: #fff0c2;
+  color: #946000;
+}
+/* Reports - Sales Chart Filters */
+
+.admin-sales-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.admin-sales-filters {
+  display: flex;
+  gap: 8px;
+  padding: 5px;
+  background: #ead8bf;
+  border-radius: 10px;
+}
+
+.admin-sales-filters button {
+  border: none;
+  background: transparent;
+  color: #4a2818;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-sales-filters button:hover {
+  background: #f8efe3;
+}
+
+.admin-sales-filters button.active {
+  background: #4a2818;
+  color: #f5d49a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .admin-sales-filters button {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+}
+/* ===== Sales Performance Styling ===== */
+
+.admin-sales-chart-header h2 {
+  color: #f5d49a;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.admin-sales-chart-header p {
+  color: #d6b995;
+  font-size: 14px;
+  margin: 0;
+}
+
+.admin-sales-chart-header {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.admin-sales-filters {
+  background: #ead8bf;
+  border: 1px solid #d5b88b;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.admin-sales-filters button.active {
+  background: #4a2818;
+  color: #f5d49a;
+}
+
+.admin-sales-chart .recharts-cartesian-axis-tick-value {
+  fill: #e0c29b;
+  font-size: 12px;
+}
+
+.admin-sales-chart .recharts-cartesian-grid line {
+  stroke: #735943;
+  stroke-opacity: 0.5;
+}
+
+.admin-sales-chart .recharts-tooltip-wrapper {
+  outline: none;
+}
+/* ===== Sales Performance Theme Fix ===== */
+
+.admin-sales-chart {
+  background: #f8efe3;
+  border: 1px solid #d5b88b;
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.admin-sales-chart-header h2 {
+  color: #f5d49a;
+}
+
+.admin-sales-chart-header p {
+  color: #d6b995;
+}
+
+/* Chart axis numbers and dates */
+.admin-sales-chart .recharts-cartesian-axis-tick-value {
+  fill: #76583b;
+}
+
+/* Chart grid */
+.admin-sales-chart .recharts-cartesian-grid line {
+  stroke: #d3bfa7;
+  stroke-opacity: 0.7;
+}
+/* ===== Sales Date Dropdown ===== */
+
+.admin-sales-date-select {
+  background: #fff8ef;
+  color: #4a2818;
+  border: 1px solid #c9a574;
+  border-radius: 8px;
+  padding: 10px 32px 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 145px;
+  outline: none;
+}
+
+.admin-sales-date-select:hover {
+  border-color: #a8793c;
+}
+
+.admin-sales-date-select:focus {
+  border-color: #a8793c;
+  box-shadow: 0 0 0 3px rgba(184, 135, 70, 0.15);
+}
+
+.admin-sales-date-select option {
+  background: #fff8ef;
+  color: #4a2818;
+}
+
+.admin-sales-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}

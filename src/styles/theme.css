@@ -1,0 +1,1005 @@
+
+/* ==========================================
+   AURA PERFUMES — GLOBAL LUXURY THEME
+   Dark Chocolate • Champagne • Gold
+========================================== */
+
+:root {
+  --aura-champagne: #e8d8bf;
+  --aura-gold: #d4af37;
+  --aura-gold-light: #eac36c;
+
+  --aura-black: #100904;
+  --aura-brown: #29170e;
+  --aura-card: #241710;
+
+  --aura-cream: #fff4e5;
+  --aura-muted: #d1c2b3;
+  --aura-border: rgba(226, 174, 79, 0.55);
+}
+
+/* ==========================================
+   GLOBAL WEBSITE BACKGROUND
+========================================== */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--aura-black);
+  color: var(--aura-cream);
+}
+
+/* ==========================================
+   REUSABLE CINEMATIC LUXURY BACKGROUND
+========================================== */
+
+.aura-page {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      ellipse at 0% 20%,
+      rgba(181, 105, 45, 0.43),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 100% 65%,
+      rgba(166, 93, 38, 0.34),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(116, 66, 29, 0.22),
+      transparent 48%
+    ),
+    linear-gradient(
+      115deg,
+      #29170e 0%,
+      #130b08 40%,
+      #100906 65%,
+      #342014 100%
+    );
+}
+
+/* LEFT GOLDEN DECORATIVE ARC */
+
+.aura-page::before {
+  content: "";
+  position: absolute;
+
+  width: 780px;
+  height: 780px;
+
+  top: -510px;
+  left: -590px;
+
+  border: 3px solid rgba(226, 174, 79, 0.72);
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 20px rgba(235, 173, 66, 0.22),
+    0 0 90px rgba(185, 112, 43, 0.15);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* RIGHT GOLDEN DECORATIVE ARC */
+
+.aura-page::after {
+  content: "";
+  position: absolute;
+
+  width: 900px;
+  height: 900px;
+
+  top: 200px;
+  right: -760px;
+
+  border: 3px solid rgba(226, 174, 79, 0.62);
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 25px rgba(235, 173, 66, 0.22),
+    0 0 100px rgba(185, 112, 43, 0.18);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ==========================================
+   LUXURY TYPOGRAPHY
+========================================== */
+
+.aura-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--aura-cream);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.aura-heading span {
+  color: var(--aura-gold-light);
+}
+
+.aura-text {
+  color: var(--aura-muted);
+  line-height: 1.8;
+}
+
+.aura-label {
+  color: var(--aura-gold);
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.aura-price {
+  color: var(--aura-gold-light);
+  font-weight: 700;
+}
+
+/* ==========================================
+   LUXURY GOLD BUTTONS
+========================================== */
+
+.aura-button {
+  display: inline-block;
+  padding: 14px 28px;
+
+  background: linear-gradient(
+    135deg,
+    #f0cd7b,
+    #d4a448
+  );
+
+  color: var(--aura-black);
+  border: 1px solid #eac36c;
+  border-radius: 6px;
+
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aura-button:hover {
+  background: #f5d58d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.22);
+}
+
+/* ==========================================
+   LUXURY PRODUCT CARDS
+========================================== */
+
+.aura-card {
+  background: linear-gradient(
+    160deg,
+    #302016 0%,
+    #18110e 100%
+  );
+
+  border: 1px solid var(--aura-border);
+  border-radius: 14px;
+  padding: 24px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.aura-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.14);
+}
+
+/* ==========================================
+   LUXURY FORM FIELDS
+========================================== */
+
+.aura-input {
+  width: 100%;
+  padding: 14px 16px;
+
+  background: #21150f;
+  color: var(--aura-cream);
+
+  border: 1px solid var(--aura-border);
+  border-radius: 7px;
+  box-sizing: border-box;
+
+  font-size: 15px;
+}
+
+.aura-input::placeholder {
+  color: #a99988;
+}
+
+.aura-input:focus {
+  outline: none;
+  border-color: var(--aura-gold-light);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+}
+
+/* ==========================================
+   REUSABLE LUXURY PANEL
+========================================== */
+
+.aura-panel {
+  background: rgba(30, 18, 12, 0.94);
+  border: 1px solid var(--aura-border);
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .aura-page::before {
+ 
+   width: 420px;
+    height: 420px;
+    top: -290px;
+    left: -330px;
+  }
+
+  .aura-page::after {
+    width: 480px;
+    height: 480px;
+    top: 45%;
+    right: -410px;
+  }
+
+  .aura-card,
+  .aura-panel {
+    padding: 20px;
+  }
+}
+
+/* ==========================================
+   AURA — REUSABLE PAGE HERO BACKGROUND
+========================================== */
+
+.aura-page-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 350px;
+  padding: 70px 6%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      ellipse at 85% 15%,
+      rgba(191, 123, 52, 0.35),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 5% 85%,
+      rgba(155, 86, 37, 0.28),
+      transparent 48%
+    ),
+    linear-gradient(
+      120deg,
+      #130c08 0%,
+      #25170f 55%,
+      #3c2517 100%
+    );
+
+  color: #fff4e5;
+}
+
+/* Top Right Golden Curve */
+
+.aura-page-hero::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  top: -420px;
+  right: -230px;
+
+  border: 2px solid rgba(224, 174, 80, 0.55);
+  border-radius: 50%;
+  box-shadow: 0 0 45px rgba(212, 175, 55, 0.15);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Bottom Left Golden Curve */
+
+.aura-page-hero::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  bottom: -340px;
+  left: -180px;
+
+  border: 2px solid rgba(224, 174, 80, 0.35);
+  border-radius: 50%;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Page Hero Heading */
+
+.aura-page-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 400;
+  color: #fff4e5;
+  margin: 0 0 20px;
+}
+
+/* Page Hero Description */
+
+.aura-page-hero p {
+  color: #d1c2b3;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .aura-page-hero {
+    min-height: 280px;
+    padding: 55px 5%;
+  }
+}
+.aura-brand-name {
+  display: inline-block;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: #21150e;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .aura-brand-name {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}
+
+/* ==========================================
+   AURA PERFUMES — CHAMPAGNE LUXURY HEADER
+========================================== */
+
+.aura-header {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #f5e3c8 0%,
+    #ecd2ab 100%
+  );
+  border-bottom: 2px solid #c79a51;
+  box-shadow: 0 4px 18px rgba(45, 25, 10, 0.18);
+}
+
+.aura-navbar {
+  max-width: 1400px;
+  min-height: 75px;
+  margin: 0 auto;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+/* Brand Logo */
+
+.aura-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.aura-brand-symbol {
+  color: #b77b26;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.aura-brand-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #21150e;
+}
+
+.aura-brand-name > span {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  letter-spacing: 8px;
+  line-height: 1.1;
+}
+
+.aura-brand-name small {
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-top: 5px;
+}
+
+/* Navigation Links */
+
+.aura-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aura-nav-links li {
+  margin: 0;
+}
+
+.aura-nav-links a {
+  position: relative;
+  display: inline-block;
+  padding: 34px 0;
+  color: #24170f;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.aura-nav-links a:hover {
+  color: #a46b20;
+}
+
+.aura-nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b88632;
+}
+
+/* Search & Cart */
+
+.aura-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.aura-search-button,
+.aura-cart-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #21150e;
+  text-decoration: none;
+}
+
+.aura-search-button:hover,
+.aura-cart-button:hover {
+  color: #a46b20;
+}
+
+.aura-cart-count {
+  position: absolute;
+  top: -11px;
+  right: -13px;
+
+  min-width: 21px;
+  height: 21px;
+  padding: 0 3px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #b88632;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .aura-navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 5%;
+  }
+
+  .aura-brand-symbol {
+    font-size: 36px;
+  }
+
+  .aura-brand-name > span {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+
+  .aura-nav-links {
+    order: 3;
+    width: 100%;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .aura-nav-links a {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .aura-nav-links a.active::after {
+    bottom: 3px;
+  }
+
+  .aura-header-actions {
+    margin-left: auto;
+  }
+}
+.aura-header .aura-navbar { min-height: 75px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+
+/* Compact Champagne Header */
+.aura-header .aura-navbar {
+  height: 85px !important;
+  min-height: 85px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.aura-header {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* ===== AURA LUXURY FOOTER ===== */
+
+.aura-footer {
+  background: linear-gradient(135deg, #f5e3c8, #ecd2ab);
+  border-top: 1px solid #c9a56b;
+  color: #21150e;
+  padding: 35px 5% 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aura-footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.aura-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: #21150e;
+  text-decoration: none;
+}
+
+.aura-footer-brand .aura-brand-symbol {
+  color: #b77b26;
+  font-size: 34px;
+}
+
+.aura-footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.aura-footer-links a {
+  color: #21150e;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.aura-footer-links a:hover {
+  color: #a46b20;
+}
+
+.aura-footer-bottom {
+  width: 100%;
+  border-top: 1px solid rgba(120, 85, 45, 0.25);
+  padding-top: 15px;
+  text-align: center;
+}
+
+.aura-footer-bottom p {
+  margin: 0;
+  font-size: 12px;
+  color: #654a34;
+}
+
+@media (max-width: 600px) {
+  .aura-footer {
+    padding: 28px 4% 15px;
+  }
+
+  .aura-footer-brand {
+    font-size: 20px;
+  }
+
+  .aura-footer-links {
+    gap: 18px;
+  }
+}
+
+/* Compact Footer */
+.aura-footer {
+  padding-top: 22px;
+  padding-bottom: 12px;
+}
+
+.aura-footer-content {
+  gap: 12px;
+}
+
+.aura-footer-bottom {
+  padding-top: 10px;
+}
+
+/* ===== SHOP LUXURY HERO ===== */
+
+.shop-luxury-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  min-height: 520px;
+  padding: 65px 6%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(157, 99, 43, 0.3), transparent 45%),
+    linear-gradient(120deg, #140b07, #352014, #1b100a);
+  box-sizing: border-box;
+}
+
+.shop-luxury-hero::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+  top: -230px;
+  right: -90px;
+  pointer-events: none;
+}
+
+.shop-hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.shop-hero-label {
+  display: block;
+  color: #d4af37;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.shop-hero-text h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4.5vw, 68px);
+  line-height: 1.15;
+  color: #fff4e5;
+  margin: 0 0 25px;
+}
+
+.shop-hero-text p {
+  color: #e2d2c2;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.shop-hero-image {
+  position: relative;
+  z-index: 1;
+}
+
+.shop-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .shop-luxury-hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 55px 6%;
+  }
+
+  .shop-hero-text h1 {
+    font-size: 40px;
+  }
+
+  .shop-hero-image img {
+    max-height: 350px;
+  }
+}
+
+/* SHOP COLLECTION HEADING */
+.collection-label {
+  display: block;
+  color: #d4af37;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+/* SHOP CATEGORY BUTTONS */
+.shop-category-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 30px 0 40px;
+}
+
+.shop-category-buttons .category-btn {
+  padding: 12px 24px;
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 30px;
+  color: #e8dfd2;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-category-buttons .category-btn:hover {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+.shop-category-buttons .category-btn.active {
+  background: #d4af37;
+  border-color: #d4af37;
+  color: #1b100b;
+  font-weight: 600;
+}
+
+
+/* SHOP HORIZONTAL PERFUME SLIDER */
+.shop-products-slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 15px 5px 25px;
+  scrollbar-width: thin;
+  scrollbar-color: #d4af37 transparent;
+}
+
+.shop-products-slider .product-card {
+  flex: 0 0 280px;
+  min-width: 280px;
+  scroll-snap-align: start;
+}
+
+.shop-products-slider .product-image {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .shop-products-slider .product-card {
+    flex-basis: 230px;
+    min-width: 230px;
+  }
+}
+
+
+/* SHOP SLIDER ARROWS */
+.shop-slider-arrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 15px 5px 20px;
+}
+
+.shop-slider-arrows button {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 50%;
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-slider-arrows button:hover {
+  background: #d4af37;
+  color: #1b100b;
+}
+
+
+/* SHOP SLIDER SIDE ARROWS */
+.featured-container:has(.shop-products-slider) {
+  position: relative;
+}
+
+.shop-slider-arrows {
+  position: absolute;
+  top: auto;
+  left: -25px;
+  right: -25px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  transform: translateY(190px);
+  z-index: 5;
+}
+
+.shop-slider-arrows button {
+  pointer-events: auto;
+  background: #21130e;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .shop-slider-arrows {
+    left: 0;
+    right: 0;
+  }
+}
+
+
+/* SHOP SEARCH STYLING */
+.shop-search {
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+  margin: 25px auto;
+  padding: 6px;
+  background: #241711;
+  border: 1px solid #d4af37;
+  border-radius: 30px;
+}
+
+.shop-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 18px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.shop-search input::placeholder {
+  color: #b8a99a;
+}
+
+.shop-search-close {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: #d4af37;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.shop-search-close:hover {
+  color: #fff;
+}
+
+
+/* HEADER SEARCH BAR - CHAMPAGNE BEIGE */
+.aura-header-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 3%;
+  background: #eae3d7;
+  border-top: 1px solid #d6c7ad;
+}
+
+.aura-header-search input {
+  flex: 1;
+  min-width: 0;
+  height: 64px;
+  padding: 0 22px;
+  background: #fdf9f1;
+  border: 1px solid #b99550;
+  border-radius: 0;
+  outline: none;
+  color: #281c15;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.aura-header-search input::placeholder {
+  color: #8c8175;
+}
+
+.aura-header-search input:focus {
+  border-color: #a77b2c;
+  box-shadow: 0 0 0 2px rgba(185, 149, 80, 0.12);
+}
+
+.aura-header-search button {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: #614b30;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.aura-header-search button:hover {
+  color: #a77b2c;
+}
+
