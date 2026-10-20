@@ -33,7 +33,7 @@ function AdminCustomers() {
         }
 
         const response = await fetch(
-          'http://localhost:3000/api/orders',
+          'https://aura-backend-9nq5.onrender.com/api/orders',
           {
             headers: {
               Authorization: `Bearer ${data.session.access_token}`

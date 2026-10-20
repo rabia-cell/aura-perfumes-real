@@ -8,7 +8,7 @@ function AdminDashboard() {
   const { data: products = [] } = useQuery({
     queryKey: ['products'],
     queryFn: async () => {
-      const response = await fetch('http://localhost:3000/api/products')
+      const response = await fetch('https://aura-backend-9nq5.onrender.com/api/products')
 
       if (!response.ok) {
         throw new Error('Failed to load products')
@@ -32,7 +32,7 @@ const { data: orders = [] } = useQuery({
       throw new Error('Admin login required')
     }
 
-    const response = await fetch('http://localhost:3000/api/orders', {
+    const response = await fetch('https://aura-backend-9nq5.onrender.com/api/orders', {
       headers: {
         Authorization: `Bearer ${data.session.access_token}`
       }

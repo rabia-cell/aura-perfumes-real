@@ -20,7 +20,7 @@ function AdminOrders() {
         }
 
         const response = await fetch(
-          'http://localhost:3000/api/orders',
+          'https://aura-backend-9nq5.onrender.com/api/orders',
           {
             headers: {
               Authorization: `Bearer ${data.session.access_token}`
@@ -65,7 +65,7 @@ function AdminOrders() {
       }
 
       const response = await fetch(
-        `http://localhost:3000/api/orders/${order.id}/status`,
+        `https://aura-backend-9nq5.onrender.com/api/orders/${order.id}/status`,
         {
           method: 'PATCH',
           headers: {

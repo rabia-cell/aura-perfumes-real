@@ -19,7 +19,7 @@ const selectedVariant = product?.sizes.find(
 
       try {
         const response = await fetch(
-          'http://localhost:3000/api/products'
+          'https://aura-backend-9nq5.onrender.com/api/products'
         )
 
         if (!response.ok) {

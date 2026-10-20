@@ -43,12 +43,12 @@ const [selectedSalesDate, setSelectedSalesDate] = useState('')
 
         const [ordersResponse, productsResponse] =
           await Promise.all([
-            fetch('http://localhost:3000/api/orders', {
+            fetch('https://aura-backend-9nq5.onrender.com/api/orders', {
               headers: {
                 Authorization: `Bearer ${data.session.access_token}`
               }
             }),
-            fetch('http://localhost:3000/api/products')
+            fetch('https://aura-backend-9nq5.onrender.com/api/products')
           ])
 
         if (!ordersResponse.ok || !productsResponse.ok) {

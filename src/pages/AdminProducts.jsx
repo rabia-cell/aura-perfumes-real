@@ -19,7 +19,7 @@ function AdminProducts() {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/products')
+    fetch('https://aura-backend-9nq5.onrender.com/api/products')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to load products')
@@ -118,7 +118,7 @@ if (authError || !data.session) {
   throw new Error('Please login again.')
 }
         const response = await fetch(
-          'http://localhost:3000/api/admin/products/stock',
+          'https://aura-backend-9nq5.onrender.com/api/admin/products/stock',
           {
             method: 'PATCH',
 headers: {

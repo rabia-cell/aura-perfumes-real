@@ -14,7 +14,7 @@ const {
 } = useQuery({
   queryKey: ['products'],
   queryFn: async () => {
-    const response = await fetch('http://localhost:3000/api/products')
+    const response = await fetch('https://aura-backend-9nq5.onrender.com/api/products')
 
     if (!response.ok) {
       throw new Error('Failed to load products')
