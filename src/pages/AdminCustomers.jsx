@@ -218,7 +218,7 @@ return [...grouped.values()].sort(
                           >
                             {filename && (
                               <img
-                                src={`/images/products/${filename}`}
+                                src={`/aura-perfumes-real/images/products/${filename}`}
                                 alt={item.product_name}
                                 width="80"
                                 height="80"

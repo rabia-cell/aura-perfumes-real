@@ -59,7 +59,7 @@ const selectedVariant = product?.sizes.find(
 <section className="product-details-content">
   <div className="product-details-image">
     <img
-      src={`/images/products/${product.name
+      src={`/aura-perfumes-real/images/products/${product.name
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '')}.png`}

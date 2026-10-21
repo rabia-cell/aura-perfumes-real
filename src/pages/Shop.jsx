@@ -21,7 +21,7 @@ function Shop() {
 
         <div className="shop-hero-image">
           <img
-src="/images/shop-hero.png"            
+src="/aura-perfumes-real/images/shop-hero.png"            
             alt="Aura Perfumes luxury fragrance collection"
           />
         </div>

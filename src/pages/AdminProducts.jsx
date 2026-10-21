@@ -70,7 +70,7 @@ function AdminProducts() {
   {index === 0 && (
     <div className="admin-product-info">
       <img
-        src={`/images/products/${perfumeImages[product.name]}`}
+        src={`/aura-perfumes-real/images/products/${perfumeImages[product.name]}`}
         alt={product.name}
         className="admin-product-image"
       />

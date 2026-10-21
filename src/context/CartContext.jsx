@@ -57,7 +57,7 @@ if (
         {
           productId: product.id,
           name: product.name,
-image: `/images/products/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.png`,
+image: `/aura-perfumes-real/images/products/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.png`,
   size: selectedVariant.size,
           price: Number(selectedVariant.price),
 quantity: requestedQuantity,          
