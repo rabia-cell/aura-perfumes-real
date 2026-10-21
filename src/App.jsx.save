@@ -1,0 +1,85 @@
+import Footer from './components/Footer'
+import Cart from './pages/Cart'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
+import Header from './components/Header'
+import FeaturedProducts from './components/FeaturedProducts'
+import Shop from './pages/Shop'
+import ProductDetails from './pages/ProductDetails'
+import './App.css'
+
+function Home() {
+  return (
+    <main>
+<section className="hero-section">
+  <div className="hero-content">
+
+    <p className="hero-label">
+      THE ART OF FINE FRAGRANCE
+    </p>
+
+    <h1>
+      Scent that arrives
+      <span> before you do.</span>
+    </h1>
+
+    <p className="hero-description">
+      Small-batch eau de parfum, composed with rare oud,
+      Taif rose and Mediterranean citrus.
+      Made to be remembered.
+    </p>
+
+    <Link to="/shop" className="hero-button">
+      Shop Fragrances →
+    </Link>
+
+  </div>
+
+  <div className="hero-image">
+    <img
+      src="/images/hero-perfume.png"
+      alt="Aura Perfumes luxury fragrance"
+    />
+  </div>
+      </section>
+
+      <FeaturedProducts />
+    </main>
+  )
+}
+function App() {
+  const location = useLocation()
+  const backgroundLocation = location.state?.backgroundLocation
+console.log('CART DEBUG:', {
+  currentPage: location.pathname,
+  backgroundPage: backgroundLocation?.pathname
+})
+  return (
+    <div className="aura-page">
+      <Header />
+{backgroundLocation && <p style={{ color: 'white', position: 'fixed', top: 150, left: 30, zIndex: 2000 }}>BACKGROUND: {backgroundLocation.pathname}</p>}
+<Routes location={backgroundLocation || location}>
+
+  <Route path="/" element={<Home />} />
+  <Route path="/shop" element={<Shop />} />
+<Route
+  path="/product/:id"
+  element={<ProductDetails key={backgroundLocation?.pathname || location.pathname} />}
+/>
+  <Route
+    path="/cart"
+    element={backgroundLocation ? null : <Cart />}
+  />
+</Routes>
+
+{backgroundLocation && location.pathname === '/cart' && (
+  <Routes>
+    <Route path="/cart" element={<Cart />} />
+  </Routes>
+)}
+
+      <Footer />
+    </div>
+  )
+}
+
+export default App
