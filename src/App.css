@@ -1120,7 +1120,7 @@ main > .hero-section + .featured-products {
       rgba(15, 8, 5, 0.28) 60%,
       rgba(15, 8, 5, 0.05) 100%
     ),
-    url('/images/home-background.png') center center / cover no-repeat;
+    url('/aura-perfumes-real/images/home-background.webp') center center / cover no-repeat;
 }
 
 .hero-section .hero-content {

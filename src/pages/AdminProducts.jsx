@@ -3,14 +3,14 @@ import { useEffect, useState } from 'react'
 import AdminSidebar from '../components/AdminSidebar'
 
 const perfumeImages = {
-  'Noor Oud': 'noor-oud.png',
-  'Rose Mirage': 'rose-mirage.png',
-  'Citrine Coast': 'citrine-coast.png',
-  'Midnight Vetiver': 'midnight-vetiver.png',
-  'Jasmin Veil': 'jasmin-veil.png',
-  'Amber Dune': 'amber-dune.png',
-  'Cedar & Smoke': 'cedar-smoke.png',
-  'Blue Zephyr': 'blue-zephyr.png'
+  'Noor Oud': 'noor-oud.webp',
+  'Rose Mirage': 'rose-mirage.webp',
+  'Citrine Coast': 'citrine-coast.webp',
+  'Midnight Vetiver': 'midnight-vetiver.webp',
+  'Jasmin Veil': 'jasmin-veil.webp',
+  'Amber Dune': 'amber-dune.webp',
+  'Cedar & Smoke': 'cedar-smoke.webp',
+  'Blue Zephyr': 'blue-zephyr.webp'
 }
 
 function AdminProducts() {

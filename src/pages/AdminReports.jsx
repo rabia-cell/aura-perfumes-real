@@ -13,14 +13,14 @@ import { useEffect, useState } from 'react'
 import AdminSidebar from '../components/AdminSidebar'
 import { supabase } from '../lib/supabase'
 const perfumeImages = {
-  'Noor Oud': 'noor-oud.png',
-  'Rose Mirage': 'rose-mirage.png',
-  'Citrine Coast': 'citrine-coast.png',
-  'Midnight Vetiver': 'midnight-vetiver.png',
-  'Jasmin Veil': 'jasmin-veil.png',
-  'Amber Dune': 'amber-dune.png',
-  'Cedar & Smoke': 'cedar-smoke.png',
-  'Blue Zephyr': 'blue-zephyr.png'
+  'Noor Oud': 'noor-oud.webp',
+  'Rose Mirage': 'rose-mirage.webp',
+  'Citrine Coast': 'citrine-coast.webp',
+  'Midnight Vetiver': 'midnight-vetiver.webp',
+  'Jasmin Veil': 'jasmin-veil.webp',
+  'Amber Dune': 'amber-dune.webp',
+  'Cedar & Smoke': 'cedar-smoke.webp',
+  'Blue Zephyr': 'blue-zephyr.webp'
 }
 function AdminReports() {
   const [orders, setOrders] = useState([])
@@ -450,7 +450,7 @@ return (
               <td>
                 <div className="admin-best-seller-product">
                   <img
-                    src={`/images/products/${perfumeImages[product.name] || 'noor-oud.png'}`}
+                    src={`/aura-perfumes-real/images/products/${perfumeImages[product.name] || 'noor-oud.webp'}`}
                     alt={product.name}
                   />
                   <strong>{product.name}</strong>
@@ -505,7 +505,7 @@ return (
 <td>
   <div className="admin-best-seller-product">
     <img
-      src={`/images/products/${perfumeImages[perfume.name] || 'noor-oud.png'}`}
+      src={`/aura-perfumes-real/images/products/${perfumeImages[perfume.name] || 'noor-oud.webp'}`}
       alt={perfume.name}
     />
     <strong>{perfume.name}</strong>

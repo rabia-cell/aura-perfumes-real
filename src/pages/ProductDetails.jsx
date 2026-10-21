@@ -62,7 +62,7 @@ const selectedVariant = product?.sizes.find(
       src={`/aura-perfumes-real/images/products/${product.name
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '')}.png`}
+        .replace(/^-|-$/g, '')}.webp`}
       alt={`${product.name} perfume bottle`}
       className="details-product-image"
     />

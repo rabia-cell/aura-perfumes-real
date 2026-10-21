@@ -50,7 +50,7 @@ onClick={onClose}
               >
 <div className="cart-product-info">
   <img
-    src={item.image || `/aura-perfumes-real/images/products/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.png`}
+    src={item.image || `/aura-perfumes-real/images/products/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.webp`}
     alt={item.name}
     className="cart-product-image"
   />

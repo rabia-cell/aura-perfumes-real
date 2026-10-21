@@ -161,7 +161,7 @@ return (
     key={product.id}
   >
                     <img
-                      src={`/aura-perfumes-real/images/products/${imageName}.png`}
+                      src={`/aura-perfumes-real/images/products/${imageName}.webp`}
                       alt={`${product.name} perfume bottle`}
                       className="product-image"
                       loading="lazy"
